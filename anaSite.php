@@ -1,5 +1,5 @@
 <?php
-  
+    
  
    
 ?>
@@ -9,65 +9,60 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link href ="style.css" rel ="stylesheet"> 
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        
+        
         <title>police station</title>
-		    <meta charset="utf-8">
-        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-        <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-        <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-      
-  <link href="assets/css/style.css" rel="stylesheet">
     </head>
     <body>
-  <header id="header" class="fixed-top header-inner-pages">
-    <div class="container d-flex align-items-center">
+      <div>
+    
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="anaSite.php">polis station</a>
+    
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="anaSite.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">COMMUNITY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Polis stations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">About </a>
+        </li>
+        
+        <li class="nav-item" >
+            <a class="nav-link" href="oturum.php"> sign in </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Yeni_Giris.php"> <input type="submit" value="sign up" class="btn btn-info"> </a>
+        </li>
 
-      <h1 class="logo me-auto"><a href="index.html">Police Station</a></h1>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto " href="anaSite.php">Home </a></li>
-          <li><a class="nav-link scrollto" href="">INFORMATION</a></li>
-          <li><a class="nav-link scrollto" href="">COMMUNITY</a></li>
-          <li><a class="nav-link   scrollto" href="">ADVISORIES</a></li>
-          <li><a class="nav-link scrollto" href="">EVERTS</a></li>
-          <li class="dropdown"><a href=""><span>Police stations in the city</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Ankara</a></li>
-              <li class="dropdown"><a href="#"><span>Bursa</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">yildirim  1</a></li>
-                  <li><a href="#">osmangazi</a></li>
-                  <li><a href="#">shrekustu</a></li>
-                  <li><a href="#">gorukle</a></li>
-                  <li><a href="#">batikent</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Istanbul</a></li>
-              <li><a href="#">Nefshir</a></li>
-              <li><a href="#">Izmir </a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="YeniGiris.php">sign up </a></li>
-          <li><a class="getstarted scrollto" href="oturum.php">sign in </a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
+        
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
     </div>
-  </header>
+  </div>
+</nav> 
+</div>
 
-  <main id="main">
-
-
+<main id="main">
 <section id="breadcrumbs" class="breadcrumbs">
   
 </section>
@@ -83,7 +78,7 @@
       </div>
     </div>
   </div>
-</div>
+</div><br><br><br><br><br><br><br><br><br>
 
 <div class="footer-top">
   <div class="container">
@@ -150,17 +145,6 @@
 
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/js/main.js"></script>
-
 
     </body> 
 </html>
