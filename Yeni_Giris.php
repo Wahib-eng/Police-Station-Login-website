@@ -1,60 +1,112 @@
 <!DOCTYPE html>
 <?php
     require ('mysqlConn.php');
-    if (isset($_POST['username']) && isset($_POST['sifre'])){
+    if (isset($_POST['polis_adi']) && isset($_POST['sifre'])){
          extract($_POST);
         
-         $password = hash('sha256', $password);
-         $sql="INSERT INTO `polis` (polis_adi, , polis_dt, polis_tn, polis_eposta, polis_adresi,sifre,sifre2)";
-         $sql = $sql . "VALUES ('$name', '$DateOfBirht', '$PhoneNo' ,'$polis__eposta','$polis_adresi','$password','$password2')";
-            $answer = mysqli_query($baglanti, $sql);
-            if ($answer){
-                 $mesaj = "<h1>Kullanıcı oluşturuldu.</h1>";
-             }
-             else{
-                     $mesaj = "<h1>Kullanıcı oluşturulamadı!</h1>";
-                 }
-         }
-
-   
+         $sifre = hash('sha256', $sifre);  	 	 	 	 		 	 	 	 	 	
+         $sql="INSERT INTO `polis` (kullaniciadi, eposta ,sifre , dt, adres, tn)";
+         $sql = $sql . "VALUES ('$polis_adi','$polis_eposta' ,'$sifre',  '$polis_dt' ,'$polis_adresi','$polis_tn')";
+        $answer = mysqli_query($connect, $sql);
+        if ($answer){
+            $msg = "<h1>Kullanıcı oluşturuldu.</h1>";
+        }
+        else{
+            $msg  = "<h1>Kullanıcı oluşturulamadı!</h1>";
+        }
+    }
 ?>
 
 <html>
    <head>
      <title>Register Page </title>
+     <meta http-equiv="Content-Type" content="text/html;  
+    charset=UTF-8" />
      <meta charset="utf-8">
-     <!-- CSS only -->
-     
-     
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
    </head>
   
-<body>
-    <h2> Register Page </h2>
-   
-
-    <div class="mb-3">
-        <form action="<?php $_PHP_SELF ?>" method="post">
-              Name : &#160&#160&#160
-          <input class="form-control" type="text"  id="uN" name="username"> <br/><br/>
-         Date of Birth : &#160&#160&#160
-         <input class="" type="date"  id="uN" name="DateOfBirht"> <br/><br/>
-         Phone No : &#160&#160&#160
-          <input class="" type="text"  id="uN" name="PhoneNo"> <br/><br/>
-          
-           Email adress : &#160&#160&#160
-          <input class="" type="text"  id="uN" name="eposta"> <br/><br/>
-          Adress : &#160&#160&#160
-              
-          <br><br><textarea class="" type="textarea"  id="uN" name="adress"> Enter your Adress ...</textarea>> <br/><br/>
-          Password :&#160&#160&#160
-        <input class="" type="password" id="pwd" name="sifre" > <br/><br/>
-             
-         <button class= "" type="submit" name="submit">register</button><br><br>
-
-             <a href="oturum.php">Click to login</a><br><br>
-             <a href ="anaSite.php">Go to main page </a>
-       </form>
+<body>  
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="anaSite.php">polis station</a>
+    
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="anaSite.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">COMMUNITY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Polis stations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">About </a>
+        </li>
+        
+        <li class="nav-item" >
+            <a class="nav-link" href="oturum.php"> sign in </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Yeni_Giris.php"> <input type="submit" value="sign up" class="btn btn-info"> </a>
+        </li>   
+      </ul>
+      
     </div>
+  </div>
+</nav> <br><br>
+
+      <?php 
+                if (isset($msg)) echo $msg;
+       ?>
+        <form  class="container"><br><br> 
+        
+         <h2 style="color: grey; "> Register Page </h2> <br><br>
+            <div class="mb-3">
+                 <label class="form-label">Name</label>
+                 <input type="text" class="form-control"  name="polis_adi">
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Date of Birth</label>
+                <input type="date" class="form-control"  name="polis_dt">
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Email</label>
+                <input type="email" class="form-control"  placeholder="username@gmail.com"  name="polis_eposta">
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Password</label>
+                <input type="password" class="form-control" name="sifre"><br>
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Phone No</label>
+            <input type="text" class="form-control"  placeholder="0533-002-22-22"  name="polis_tn">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Address</label>
+                <input type="text" class="form-control"  name="polis_adresi">
+            </div>
+            
+            <div class="mb-3">
+                 <button type="submit" class="btn btn-primary">register</button> <br><br>
+            </div>
+            <div> 
+                <a href="oturum.php" >Click to login</a><br><br> <a class="link-secondary" href ="anaSite.php">Go to main page </a><br><br>
+               
+            </div>
+            
+        </form>
 
 </body>
 </html>
