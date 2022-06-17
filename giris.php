@@ -16,7 +16,7 @@
     }
     
     $count = mysqli_num_rows($answer);
-    if ($count == 1){
+    if ($count == 0){
     $_SESSION['polis_adi'] = $polis_adi;
     }else{
     $mesaj = "<h1> Hatalı Kullanıcı adı veya Şifre!</h1>";
@@ -40,44 +40,6 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    </head>
 <body >
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="anaSite.php">polis station</a>
-    
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="anaSite.php">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Information</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">COMMUNITY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Polis stations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">About </a>
-        </li>
-        
-        <li class="nav-item" >
-            <a class="nav-link" href="oturum.php"> sign in </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="Yeni_Giris.php"> <input type="submit" value="sign up" class="btn btn-info"> </a>
-        </li>   
-      </ul>
-      
-    </div>
-  </div>
-</nav>
-  <div > <br>
-     
     
     <form action="<?php $_PHP_SELF ?>" method="post" class="container" style="margin-top :50px; margin-bottom:50px">
           <?php  
@@ -95,12 +57,13 @@
         </div>  
 
        <div>
-          <button  type="submit" class="btn btn-primary"> Login  </button>
+          <button  type="submit" class="btn btn-success"> log in  </button>
        </div><br>
      <div >
          <a href = "Yeni_Giris.php" >sign up </a> <br><br>
          <a  href = "anaSite.php" class="link-secondary">Main Page</a>
           <br/><br/>
+          
           
    
      </form>
