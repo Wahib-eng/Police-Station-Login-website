@@ -30,42 +30,7 @@
    </head>
   
 <body>  
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="anaSite.php">polis station</a>
-    
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="anaSite.php">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Information</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">COMMUNITY</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Polis stations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">About </a>
-        </li>
-        
-        <li class="nav-item" >
-            <a class="nav-link" href="oturum.php"> sign in </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="Yeni_Giris.php"> <input type="submit" value="sign up" class="btn btn-info"> </a>
-        </li>   
-      </ul>
-      
-    </div>
-  </div>
-</nav> <br><br>
+
 
       <?php 
                 if (isset($msg)) echo $msg;
@@ -99,10 +64,11 @@
             </div>
             
             <div class="mb-3">
-                 <button type="submit" class="btn btn-primary">register</button> <br><br>
+                 <button type="submit" class="btn btn-success">register</button> <br><br>
             </div>
             <div> 
-                <a href="oturum.php" >Click to login</a><br><br> <a class="link-secondary" href ="anaSite.php">Go to main page </a><br><br>
+                <a href="giris.php" >Click to login</a><br><br>
+               <a class="link-secondary" href ="anaSite.php">Go to main page </a><br><br>
                
             </div>
             
