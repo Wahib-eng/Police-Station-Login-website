@@ -60,7 +60,7 @@
           <button  type="submit" class="btn btn-success"> log in  </button>
        </div><br>
      <div >
-         <a href = "Yeni_Giris.php" >sign up </a> <br><br>
+         <a href = "kayit.php" >sign up </a> <br><br>
          <a  href = "anaSite.php" class="link-secondary">Main Page</a>
           <br/><br/>
           
