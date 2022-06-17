@@ -43,14 +43,13 @@
         <li class="nav-item">
           <a class="nav-link" href="">About </a>
         </li>
-        
-        <li class="nav-item" >
-            <a class="nav-link" href="oturum.php"> sign in </a>
-        </li>
         <li class="nav-item">
-            <a class="nav-link" href="Yeni_Giris.php"> <input type="submit" value="sign up" class="btn btn-info"> </a>
+          <a class="btn btn-danger" href="cikis.php">log out  </a>
         </li>
-
+        
+        
+        
+        
         
       </ul>
       <form class="d-flex">
