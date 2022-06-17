@@ -1,4 +1,17 @@
 <?php
+ session_start(); 
+   
+ //eğer username adlı oturum değişkeni yok ise  
+ 
+ //login sayfasına yönlendir 
+ 
+ if ( !isset($_SESSION['polis_adi']) ) { 
+ 
+   header("Location: giris.php"); 
+ 
+   exit(); 
+ 
+  } 
     
  
    
