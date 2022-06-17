@@ -6,7 +6,7 @@
         
          $sifre = hash('sha256', $sifre);  	 	 	 	 		 	 	 	 	 	
          $sql="INSERT INTO `polis` (kullaniciadi, eposta ,sifre , dt, adres, tn)";
-         $sql = $sql . "VALUES ('$polis_adi','$polis_eposta' ,'$sifre',  '$polis_dt' ,'$polis_adresi','$polis_tn')";
+         $sql = $sql . " VALUES ('$polis_adi','$polis_eposta' ,'$sifre',  '$polis_dt' ,'$polis_adresi','$polis_tn')";
         $answer = mysqli_query($connect, $sql);
         if ($answer){
             $msg = "<h1>Kullanıcı oluşturuldu.</h1>";
@@ -40,7 +40,7 @@
          <h2 style="color: grey; "> Register Page </h2> <br><br>
             <div class="mb-3">
                  <label class="form-label">Name</label>
-                 <input type="text" class="form-control"  name="polis_adi">
+                 <input type="text" class="form-control"  name="polis_adi" >
             </div>
             <div class="mb-3">
                 <label  class="form-label">Date of Birth</label>
