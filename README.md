@@ -21,16 +21,23 @@
 - ![list](https://user-images.githubusercontent.com/75446834/175064684-8a1660b5-69b5-45cd-99ff-4d84e9b5c668.png)
 
 
-
-- The web site has main page welcoming users.
-- Register to reach the main page through login in Page. 
+# Steps : 
+- sign up and have your account :![sign up page ]([https://policepermission.000webhostapp.com/kayitForm.php]) 
+- sign in : ![sign up page ]([https://policepermission.000webhostapp.com/index.php]) 
+- The web site has main page welcoming users. 
+- After registering , you will reach the main page. 
 - In the main page , you have the ability to update , delete and show all users accounts. 
-- You also have a permission page for getting permission. 
+- You also have a permission page for getting permissions. 
+
+
 
 # Author
 - Wahib-eng 
 
+
 # Refernces 
 
-- ![list]([https://www.w3schools.com/mySQl/default.asp])
+- ![W3schools_Mysql]([https://www.w3schools.com/mySQl/default.asp])
+- ![W3schools_PHP]([https://www.w3schools.com/php/default.asp])
+-
 
