@@ -1,4 +1,6 @@
-                                              # Php & Mysql Project 
+# Php & Mysql Project 
+
+
 
 # Main Page :
 
@@ -22,8 +24,8 @@
 
 
 # Steps : 
-- sign up and have your account :![sign up page ]([https://policepermission.000webhostapp.com/kayitForm.php]) 
-- sign in : ![sign up page ]([https://policepermission.000webhostapp.com/index.php]) 
+- sign up and have your account : https://policepermission.000webhostapp.com/kayitForm.php
+- sign in : https://policepermission.000webhostapp.com/index.php
 - The web site has main page welcoming users. 
 - After registering , you will reach the main page. 
 - In the main page , you have the ability to update , delete and show all users accounts. 
@@ -37,7 +39,7 @@
 
 # Refernces 
 
-- ![W3schools_Mysql]([https://www.w3schools.com/mySQl/default.asp])
-- ![W3schools_PHP]([https://www.w3schools.com/php/default.asp])
--
+- https://www.w3schools.com/mySQl/default.asp 
+- https://www.w3schools.com/php/default.asp
+
 
