@@ -9,19 +9,36 @@
     <title>Permission Form</title>
 </head>
 
-<body  style =" background-image: url(3d-render-police-line-tape-against-defocussed-background.jpg); color: white; ">
+<body  style =" background-image: url(3d-render-police-line-tape-against-defocussed-background.jpg); color: white; "  >
+    <nav class="navbar navbar-expand-sm  navbar-dark bg-dark">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="anaSite.php">police Permission System </a>
+            
+            <div class="collapse navbar-collapse" id="mynavbar">
+               <ul class="navbar-nav me-auto">
+               
+               <li class="nav-item">
+                     <a href="cikis.php"><button class="btn btn-danger" >log out  </button></a>  
+               </li>
+               </ul>
+               
+            </div>
+         </div>
+       </div>
+      </nav> <br><br><br><br>
+
 
 <div class="row justify-content-center">
    <div class="col-lg-6 col-md-6 col-12">
      
     
-    <form action="izinKaydet.php" method="post" class="container" style="margin-top :50px; margin-bottom:50px" >
+    <form action="izinKaydet.php" method="post"  >
         
        <h2 >Police Permission Page </h2><br> <br> 
         
        <div class="mb-3">
           <label class="form-label">Permission Reason </label>
-          <textarea class="form-control" name="detail" required >  </textarea>
+          <textarea class="form-control" name="details" required >  </textarea>
         </div>  
        
         <div class="mb-3">
