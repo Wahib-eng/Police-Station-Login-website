@@ -1,6 +1,6 @@
 # Php & Mysql Project 
 
-
+# NOTE : Site VPN olmadan host sitesi yüzünden bazı wifilerde çalışmamaktadır .. 
 
 # Main Page :
 
