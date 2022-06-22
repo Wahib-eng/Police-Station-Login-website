@@ -22,8 +22,12 @@
 # List Of Users :
 - ![list](https://user-images.githubusercontent.com/75446834/175064684-8a1660b5-69b5-45cd-99ff-4d84e9b5c668.png)
 
+# xamp : 
+![xamp](https://user-images.githubusercontent.com/75446834/175104813-20676a73-4fbc-45af-b3df-80c1d28d7d79.png)
+
 
 # Steps : 
+
 - sign up and have your account : https://policepermission.000webhostapp.com/kayitForm.php
 - sign in : https://policepermission.000webhostapp.com/index.php
 - The web site has main page welcoming users. 
